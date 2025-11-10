@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        /* Estilização base para todos os elementos <div> */
+        div {
+            /* Faz com que as divs se comportem como elementos em linha, mas que aceitam
+               definições de altura e largura, permitindo que fiquem lado a lado. */
+            display: inline-block;
+            background-color: lightgray; /* Define a cor de fundo inicial */
+            border: 1px solid black;     /* Adiciona uma borda sólida de 1px */
+            text-align: center;          /* Centraliza o conteúdo de texto horizontalmente */
+            height: 200px;               /* Define uma altura fixa */
+            width: 200px;                /* Define uma largura fixa */
+        }
+
+        /* A pseudo-classe ':hover' é aplicada quando o usuário
+           passa o cursor do mouse sobre o elemento. */
+        div:hover{
+            /* Altera a cor de fundo para amarelo quando o mouse está sobre a div */
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <!-- Três elementos <div> que terão o estilo alterado ao passar o mouse -->
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+</body>
+</html>
